@@ -7,4 +7,6 @@ puts "1: Global Thermonuclear War\n2: Portal 2\n3: Halo\n4: Half Life 2 Episode 
 number = gets.chomp
 if number.to_i != 1
 	puts "You should have played Global Thermonuclear War!!!!!"
+else
+	puts "BOOM!"
 end
