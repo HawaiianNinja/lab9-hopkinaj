@@ -21,5 +21,11 @@ Feature: Prompt a user for their name
 		Given the application is running
 		When I type "Tim" and press Enter
 		When I type "2" and press Enter
-		Then I should see "You didn't choose Global Thermonuclear War!!!!\n"
+		Then I should see "You didn't choose Global Thermonuclear War!!!!"
+		
+	Scenario: Verify that choosing Global Thermonuclear War goes boom
+		Given the application is running
+		When I type "Tim" and press Enter
+		When I type "1" and press Enter
+		Then I should see "BOOM!"
 		
