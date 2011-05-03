@@ -6,6 +6,6 @@ Then /^I should see "([^""]*)"$/ do |text|
 	assert_partial_output(text)
 end
 
-Given /^I enter "([^""]*)"$/ do |arg1|
-	type(arg1)
+When /^I type "([^""]*)" and press Enter$/ do |text|
+	type(text)
 end
